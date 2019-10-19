@@ -52,45 +52,25 @@ function contactForm() {
 
 $(document).ready(function(){
 
+    var answers =[], answer,cnt=0;
+    const pages = new Pageable("#container");
 
     $('.background-image-holder').each(function() {
         var imgSrc = $(this).children('img').attr('src');
         $(this).css('background', 'url("' + imgSrc + '")').css('background-position', 'initial').css('opacity','1');
     });
 
-    //result percentage
-
-
-    var answers =[], answer,cnt=0;
-   // result();
-/*    $('.main-carousel').flickity({
-        // options
-        pageDots: false,
-        prevNextButtons: false,
-        contain: true,
-       /!* cellAlign: 'left',
-        verticalCells: true,
-        contain: true,
-        prevNextButtons: false,
-       *!/
-// disable previous & next buttons and dots
-    });*/
-    //new WOW().init();
-    // add this code
-    Flickity.prototype._createResizeClass = function() {
-        this.element.classList.add('flickity-resize');
-    };
-
-    Flickity.createMethods.push('_createResizeClass');
-
-    var resize = Flickity.prototype.resize;
-    Flickity.prototype.resize = function() {
-        this.element.classList.remove('flickity-resize');
-        resize.call( this );
-        this.element.classList.add('flickity-resize');
-    };
+    $('#btn-start a').bind('click', function (e) {
+        $('.dialog-top-center img').hide();
+        $('#question-top-center1').show();
+        $('#answers-top-re1').show();
+    });
 
     $('.first-q a').bind('click', function (e) {
+        $('#question-top-center1').hide();
+        $('#answers-top-re1').hide();
+        $('#question-top-center2').show();
+        $('#answers-top2').show();
         answer = $(this).attr('id');
         var qs = answer.split('-');
         var ans = qs[1];
@@ -102,6 +82,10 @@ $(document).ready(function(){
     });
 
     $('.second-q a').bind('click', function (e) {
+        $('#question-top-center2').hide();
+        $('#answers-top2').hide();
+        $('#question-top-center3').show();
+        $('#top3').show();
         answer = $(this).attr('id');
         var qs = answer.split('-');
         var ans = qs[1];
@@ -120,7 +104,16 @@ $(document).ready(function(){
             cnt++;
             answers.push(cnt);
         }
+
         //resultAnswers();
+        pages.scrollToAnchor("#page-6");
+
+        var lnt = answers.length;
+        var result = Math.round((lnt / 3 )*100);
+        $('.result-page').html(result + '%');
+        $(".progress-bar").data("percent",result);
+        $(".progress-bar").loading();
+
         return answers;
     });
 
