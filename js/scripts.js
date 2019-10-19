@@ -55,13 +55,20 @@ $(document).ready(function(){
     var answers =[], answer,cnt=0;
     const pages = new Pageable("#container");
 
-    $('.background-image-holder').each(function() {
-        var imgSrc = $(this).children('img').attr('src');
-        $(this).css('background', 'url("' + imgSrc + '")').css('background-position', 'initial').css('opacity','1');
-    });
+    var screenWidth = $(window).width();
+    if (screenWidth > 700){
+        $('.background-image-holder').each(function() {
+            var imgSrc = $(this).children('img').attr('src');
+            $(this).css('background', 'url("' + imgSrc + '")').css('background-position', 'initial').css('opacity','1');
+        });
+    }
 
     $('#btn-start a').bind('click', function (e) {
         $('.dialog-top-center img').hide();
+        $('#question-top-center2').hide();
+        $('#answers-top2').hide();
+        $('#question-top-center3').hide();
+        $('#top3').hide();
         $('#question-top-center1').show();
         $('#answers-top-re1').show();
     });
@@ -117,7 +124,7 @@ $(document).ready(function(){
         return answers;
     });
 
-    $('.result-page-butt a').bind('click', function (e) {
+  /*  $('.result-page-butt a').bind('click', function (e) {
 
             var lnt = answers.length;
             var result = Math.round((lnt / 3 )*100);
@@ -125,7 +132,7 @@ $(document).ready(function(){
             $(".progress-bar").data("percent",result);
             $(".progress-bar").loading();
 
-    });
+    });*/
 
     function resultAnswers () {
         console.log(answers);

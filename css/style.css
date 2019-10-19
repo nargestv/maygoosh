@@ -52,6 +52,12 @@ img{
         padding-top: calc(3rem * 2);
         padding-bottom: calc(3rem * 2);
     }
+    .form__field {
+        position: relative;
+        transition: all 0.5s ease-in-out 0.4s;
+        transform: translateY(10px);
+        width: 330px;
+    }
 }
 
 .jumbotron p:last-child {
@@ -116,19 +122,7 @@ section{
 .background-image-holder:not([class*='col-']) {
     width: 100%;
 }
-.background-image-holder {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover !important;
-    background-position: 50% 50% !important;
-    z-index: 0;
-    transition: opacity .3s linear;
-    -webkit-transition: opacity .3s linear;
-    opacity: 0;
-    background: #252525;
-}
+
 .background-image-holder:not([class*='col-']) {
     width: 100%;
 }
@@ -141,9 +135,7 @@ section{
 .image--light .background-image-holder {
     background: none;
 }
-.background-image-holder img {
-    display: none;
-}
+
 [data-overlay] {
     position: relative;
 }
@@ -165,8 +157,46 @@ section{
         position: relative;
         min-height: 18.57142857em;
     }
+    .section1-1 .background-image-holder{
+        position: absolute !important;
+    }
+    .background-image-holder img {
+        min-height: 500px;
+    }
+    .flag-s{
+        top: 87px !important
+    }
+    .flag-s img{
+        max-width: 100px !important;
+    }
+    .midd-l2 {
+        left: 62px !important;
+        bottom: 50% !important;
+    }
+    .midd-l{
+        top: 10% !important;
+    }
+    .form{
+        margin-top: 75% !important;
+    }
+    .form__field:not(:last-child){
+        margin: 10px !important;
+    }
 }
 @media (min-width: 768px) {
+    .background-image-holder {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover !important;
+        background-position: 50% 50% !important;
+        z-index: 0;
+        transition: opacity .3s linear;
+        -webkit-transition: opacity .3s linear;
+        opacity: 0;
+        background: #252525;
+    }
     .section155 {
         background: url("../img/section1.png");
         /*background: url('../img/section1.png') no-repeat;*/
@@ -208,7 +238,11 @@ section{
         background-size: cover;
     }
 }
-
+@media (max-width: 768px) {
+    .mey-top{
+        top: 33% !important;
+    }
+}
 .btn-w{
     background: #00c60b;
 }
@@ -227,12 +261,7 @@ section{
 .form__field:not(:last-child) {
     margin-bottom: 20px;
 }
-.form__field {
-    position: relative;
-    transition: all 0.5s ease-in-out 0.4s;
-    transform: translateY(10px);
-    width: 330px;
-}
+
 .form__input {
     font: 20px/1.5 'IRANSansBold',tahoma,arial;
     display: block;
@@ -329,13 +358,20 @@ section{
     top: 0;
     z-index: 222;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .butt-top-center{
     max-width: 29%;
-    bottom: 0px;
     z-index: 222;
     position: absolute;
-    right: 38%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
 }
 .dialog-top-center {
     max-width: 21%;
@@ -410,7 +446,7 @@ section{
 .flag-s {
     position: absolute;
     left: 24%;
-    top: 4%;
+    top: 20px;
     z-index: 999;
 }
 .flag-s img{

@@ -15,38 +15,6 @@ section {
   position: relative;
 }
 
-#page-1 {
-  background-color: #3F51B5;
-}
-
-#page-2 {
-  background-color: #673AB7;
-}
-
-#page-3 {
-  background-color: #9C27B0;
-}
-
-#page-4 {
-  background-color: #E91E63;
-}
-
-#page-5 {
-  background-color: #F44336;
-}
-
-#page-6 {
-  background-color: #4CAF50;
-}
-
-#page-1-clone {
-  background-color: #3F51B5;
-}
-
-#page-6-clone {
-  background-color: #4CAF50;
-}
-
 nav {
   height: 100vh;
   position: fixed;
