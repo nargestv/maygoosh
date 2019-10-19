@@ -1,0 +1,61 @@
+/* Roozbeh Eslami */
+/*////////////////////// PARTIALS //////////////////////*/
+/*////////////////////// FONTS //////////////////////*/
+/* SHABNAM */
+@font-face {
+  font-family: "Shabnam-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/shabnam/Shabnam-Light.eot");
+  src: url("../fonts/shabnam/Shabnam-Light.eot") format("embedded-opentype"), url("../fonts/shabnam/Shabnam-Light.woff2") format("woff2"), url("../fonts/shabnam/Shabnam-Light.woff") format("woff"), url("../fonts/shabnam/Shabnam-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/shabnam/Shabnam.eot");
+  src: url("../fonts/shabnam/Shabnam.eot") format("embedded-opentype"), url("../fonts/shabnam/Shabnam.woff2") format("woff2"), url("../fonts/shabnam/Shabnam.woff") format("woff"), url("../fonts/shabnam/Shabnam.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Shabnam-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/shabnam/Shabnam-Bold.eot");
+  src: url("../fonts/shabnam/Shabnam-Bold.eot") format("embedded-opentype"), url("../fonts/shabnam/Shabnam-Bold.woff2") format("woff2"), url("../fonts/shabnam/Shabnam-Bold.woff") format("woff"), url("../fonts/shabnam/Shabnam-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanBold";
+  src: url("../fonts/iran-yekan/iranyekanwebbold.eot");
+  src: url("../fonts/iran-yekan/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-yekan/iranyekanwebbold.woff") format("woff"), url("../fonts/iran-yekan/iranyekanwebbold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanLight";
+  src: url("../fonts/iran-yekan/iranyekanweblight.eot");
+  src: url("../fonts/iran-yekan/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-yekan/iranyekanweblight.woff") format("woff"), url("../fonts/iran-yekan/iranyekanweblight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANYekanRegular";
+  src: url("../fonts/iran-yekan/iranyekanwebregular.eot");
+  src: url("../fonts/iran-yekan/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-yekan/iranyekanwebregular.woff") format("woff"), url("../fonts/iran-yekan/iranyekanwebregular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSansUltraLight";
+  src: url("../fonts/iran-sans/IRANSansUltraLight.eot");
+  src: url("../fonts/iran-sans/IRANSansUltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans/IRANSansUltraLight.woff") format("woff"), url("../fonts/iran-sans/IRANSansUltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSansLight";
+  src: url("../fonts/iran-sans/IRANSansLight.eot");
+  src: url("../fonts/iran-sans/IRANSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans/IRANSansLight.woff") format("woff"), url("../fonts/iran-sans/IRANSansLight.ttf") format("truetype");
+}
+
+/* IRAN YEKAN */
+/* IRAN SANS */
+/* IRAN SANS */
