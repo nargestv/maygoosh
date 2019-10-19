@@ -328,6 +328,7 @@ section{
     max-width: 18%;
     top: 0;
     z-index: 222;
+    position: absolute;
 }
 .butt-top-center{
     max-width: 29%;
@@ -397,7 +398,10 @@ section{
     animation-iteration-count: revert;
 }
 .register-form{
-    margin: 11% 19% 0 0;
+   /* margin: 11% 19% 0 0;*/
+    position: absolute;
+    right: 20%;
+    top: 0;
 }
 .input-group-btn input{
     margin-top: 62px;
