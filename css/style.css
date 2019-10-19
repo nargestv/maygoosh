@@ -395,11 +395,19 @@ section{
     z-index: 999;
     font-family: Lalezar, serif;
     color: #000;
-    font-size: 18px;
-    left: 13%;
-    top: 17%;
+    font-size: 14px;
+    right: 0;
+    top: 44%;
     font-weight: bold;
     padding-left: 27px;
+    width: 100%;
+}
+.question-content{
+    text-align: justify;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    margin: auto;
 }
 .question-top-res{
     color: #fff;
