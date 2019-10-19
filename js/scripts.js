@@ -50,17 +50,16 @@ function contactForm() {
     });
 }
 
-
 $(document).ready(function(){
     $('.background-image-holder').each(function() {
         var imgSrc = $(this).children('img').attr('src');
         $(this).css('background', 'url("' + imgSrc + '")').css('background-position', 'initial').css('opacity','1');
     });
-    Zepto(function($){
+  /*  Zepto(function($){
         $(".main").onePageScroll({
             loop: true
         });
-    })
+    });*/
   /*  Zepto(".main").onePageScroll({
         sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
         easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
