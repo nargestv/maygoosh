@@ -171,7 +171,7 @@ section{
     }
     .midd-l2 {
         left: 62px !important;
-        bottom: 50% !important;
+        top: 50% !important;
     }
     .midd-l{
         top: 10% !important;
@@ -181,6 +181,16 @@ section{
     }
     .form__field:not(:last-child){
         margin: 10px !important;
+    }
+    .butt-top-center{
+        bottom: 350px !important;
+        pointer-events: all
+    }
+    .btn--primary, .btn--primary:visited{
+        margin: 19px 44px 19px 19px !important;
+    }
+    .question-top{
+        font-size: 10px !important;
     }
 }
 @media (min-width: 768px) {

@@ -52,8 +52,8 @@ function contactForm() {
 
 $(document).ready(function(){
 
+    const pages = new Pageable("main");
     var answers =[], answer,cnt=0;
-    const pages = new Pageable("#container");
 
     var screenWidth = $(window).width();
     if (screenWidth > 700){
@@ -113,7 +113,7 @@ $(document).ready(function(){
         }
 
         //resultAnswers();
-        pages.scrollToAnchor("#page-6");
+        pages.scrollToPage(6);
 
         var lnt = answers.length;
         var result = Math.round((lnt / 3 )*100);
